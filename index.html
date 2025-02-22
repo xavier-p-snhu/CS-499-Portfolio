@@ -5,11 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Computer Science ePortfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 0; }
-        header, section, footer { margin-bottom: 20px; }
-        nav ul { list-style: none; padding: 0; }
-        nav ul li { display: inline; margin-right: 15px; }
-        a { text-decoration: none; color: #0073e6; }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            width: 80%;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0073e6;
+            border-bottom: 2px solid #0073e6;
+            padding-bottom: 5px;
+        }
+        footer {
+            background: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        a {
+            color: #0073e6;
+        }
     </style>
 </head>
 <body>
@@ -35,43 +85,40 @@
 From the outset of my academic journey, I was committed to becoming a software developer, and this program has reinforced that goal. However, one of the most significant takeaways from my coursework has been the emphasis on security. I now have a deeper appreciation for the complexities of integrating security measures into software and understand the necessity of designing applications with security in mind from the beginning. <br>
 
 Enhancing my artifact has directly contributed to my professional development. This project not only demonstrates my ability to optimize and refactor code but also highlights my capacity to implement industry best practices. Additionally, presenting my work in a structured manner has strengthened my ability to communicate effectively with stakeholders and collaborate in a team environment—both crucial skills in the field of software development. <br>
-
-The artifact I selected was originally my final project for CS300: Data Structures and was published on GitHub on December 16, 2023. It began as an implementation of a HashTable for efficient data insertion and retrieval. This project demonstrated foundational knowledge in data structures and efficient data lookup—critical skills for any software developer. <br>
-
-To enhance the artifact, I made several key improvements: <br>
-- Replacing the HashTable with a Red-Black Tree to improve search efficiency and ensure self-balancing properties. <br>
-- Implementing dynamic unit tests to validate functionality and ensure code reliability. <br>
-- MySQL integration will be added to support data persistence through importing and exporting data. <br>
-These enhancements demonstrate my ability to optimize algorithm performance, improve software reliability through testing, and integrate database solutions—essential competencies in modern software development. This project serves as a testament to my ability to solve complex problems, adapt existing systems for efficiency, and deliver maintainable and scalable solutions. <br>
-
-Through my coursework and hands-on experience, I have developed the technical and professional skills necessary for a successful career in software development. My ability to refine and optimize code, work collaboratively, and incorporate security-conscious design decisions positions me as a strong candidate for roles in the field. This ePortfolio is a reflection of my growth and a showcase of my ability to develop robust and efficient software solutions.  
         </p>
     </section>
 
     <section id="code-review">
         <h2>Code Review</h2>
-        <p>Embedded video or link to a code review video walkthrough explaining the initial state of my project and planned enhancements.</p>
+        <video width="640" height="360" controls>
+            <source src="Videos/codeReview.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </section>
 
     <section id="artifacts">
         <h2>Artifacts</h2>
-
-        <article id="software-engineering">
-            <h3>Software Design and Engineering</h3>
-            <p>Description of the original artifact and enhancements made.</p>
-            <p><strong>Enhancements:</strong> Transferred project to a different language, improved structure, added documentation, etc.</p>
+        <article>
+          <h3>Introduction</h3>
+          <p>This artifact is a final project I created for my CS300 (Data Structures) course at SNHU. It was published to GitHub on December 16, 2023, and demonstrates the insertion and retrieval of data from a HashTable. The project showcases foundational skills in data structures, such as efficient data storage and lookup, which are essential for software development. I included this artifact in my ePortfolio because it effectively demonstrates my skills in Software Design and Engineering, Algorithms and Data Structures, and Databases.</p>
         </article>
 
-        <article id="algorithms">
-            <h3>Algorithms and Data Structures</h3>
-            <p>Description of the original artifact and enhancements made.</p>
-            <p><strong>Enhancements:</strong> Improved efficiency, replaced HashTable with Red-Black Tree, optimized search algorithms.</p>
+        <article id="data-structures">
+            <h3>Data Structures: Red-Black Tree Implementation</h3>
+            <p>This artifact is a final project I created for my CS300 (Data Structures) course at SNHU. It was published to GitHub on December 16, 2023, and demonstrates the insertion and retrieval of data from a HashTable...</p>
+            <p><strong>Enhancements:</strong> Implemented Red-Black Tree, added deletion function, structured tests for validation.</p>
+            <p><strong>Challenges Faced:</strong> Issues with modularizing code, debugging testing framework integration, handling memory management.</p>
         </article>
 
         <article id="databases">
-            <h3>Databases</h3>
-            <p>Description of the original artifact and enhancements made.</p>
-            <p><strong>Enhancements:</strong> Integrated MySQL, improved data storage and retrieval methods.</p>
+            <h3>Databases: MySQL Integration</h3>
+            <p>During my enhancements, I incorporated MySQL for persistent data storage. I faced challenges in linking the necessary .dll files in Visual Studio but ultimately solved it by ensuring architecture compatibility...</p>
+            <p><strong>Enhancements:</strong> Implemented SQL database storage, improved data retrieval efficiency, reinforced knowledge of SQL commands.</p>
+        </article>
+
+        <article id="software-design">
+            <h3>Software Design and Engineering: Dynamic Testing</h3>
+            <p><strong>Challenges and Improvements:</strong> Improved RedBlackTree constructors for cleaner code, fixed a destructor issue by returning std::unique_ptr, implemented DeleteNode and structured testing.</p>
         </article>
     </section>
 
